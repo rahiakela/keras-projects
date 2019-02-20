@@ -8,7 +8,7 @@ import numpy as np
 Generate train dummy data for 1000 Students and dummy test for 500
 Columns :Age, Hours of Study & Avg Previous test scores
 """
-np.random.seed(2018) # Setting seed for reproducibility
+np.random.seed(2018)  # Setting seed for reproducibility
 train_data = np.random.random((1000, 3))
 test_data = np.random.random((500, 3))
 
@@ -42,4 +42,4 @@ Finally, once the model is trained, we can use the trained model to make
 predictions on the new test dataset.
 """
 predictions = model.predict(test_data)
-# print(predictions)
+print(predictions)
